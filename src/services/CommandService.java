@@ -73,9 +73,12 @@ public class CommandService {
 
                     findAvailableIndex();
 
-                    this.content.put(availableIndex, new Task(availableIndex, args[1], "todo", new Date(), new Date()));
+                    this.content.put(availableIndex,
+                            new Task(this.availableIndex, args[1], "todo", new Date(), new Date()));
 
                     this.updateContent(jsonFileManager);
+
+                    System.out.println("Task added successfully (ID: " + this.availableIndex + ")");
 
                     break;
                 case "update":
