@@ -1,0 +1,10 @@
+##Text Files
+*.json
+*.sh
+
+.vscode
+
+#Directories
+out/
+build/
+
